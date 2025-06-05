@@ -1,0 +1,98 @@
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.gap {
+  gap: 5px;
+  font-weight: 450;
+}
+.f {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.border {
+  border: 1px solid rgb(167, 162, 162);
+  border-radius: 10px;
+}
+.padding {
+  padding: 1.2rem;
+}
+.hide {
+  display: none;
+}
+.clips-padd {
+  padding: 1rem 2rem;
+}
+.flex-dir {
+  flex-direction: column;
+  text-align: center;
+  gap: 1rem;
+}
+.bor {
+  border-bottom: 2px solid #f0f0f1;
+}
+.fg {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+}
+.fg2 {
+  display: flex;
+  align-items: center;
+}
+.fg3 {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.fe {
+  display: flex;
+  justify-content: flex-end;
+}
+.text-center {
+  text-align: center;
+  color: #726f6f;
+}
+.text-center2 {
+  text-align: center;
+  color: #726f6f;
+}
+.text-center:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.dj {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.dj8 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 1rem;
+}
+.dk {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 0.5rem;
+  margin-top: 0.4rem;
+  color: #4b4949;
+  align-items: center;
+}
+.width {
+  width: 100%;
+}
+.justify-center {
+  justify-content: center;
+}
+.bg{
+  background-color: #2b63b7 ;
+}
