@@ -161,4 +161,10 @@
   .con p{
     margin-left: 0;
   }
+  .right-side-div-svg{
+    display: none;
+  }
+  .sign-out-btn{
+    font-size: 0.9rem;
+  }
 }

@@ -8,7 +8,6 @@
 a {
   all: unset;
 }
-
 .fake-top {
   width: 100%;
   height: 40px;
@@ -615,8 +614,6 @@ a {
   padding: 0.3rem;
 }
 
-.sche-more-pad {}
-
 .next-prev-div {
   width: 35px;
   height: 35px;
@@ -782,6 +779,73 @@ a {
   display: none;
 }
 
+.menu-hide {
+  height: 80vh;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #666484;
+}
+
+.input-hide-div {
+  width: 100%;
+  border: 1px solid #e1e1e6;
+  padding: 0.5rem;
+}
+
+.input-hide-div input {
+  width: 90%;
+  outline: none;
+  border: none;
+}
+
+.menu-ul {
+  list-style-type: none;
+}
+
+.menu-ul li {
+  padding: 0.8rem;
+  cursor: pointer;
+}
+
+.menu-border {
+  border: 1px solid #e1e1e6;
+}
+
+.sign-out-contain {
+  padding: 1rem 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  border-top: 1.5px solid #7b7878;
+}
+
+.sign-out-btn {
+  border: none;
+  background-color: #fff;
+  font-size: 1.1rem;
+  font-weight: 500;
+  width: 100px;
+}
+
+.my-profile {
+  width: 50%;
+  background-color: #0b6fe9;
+  font-size: 1rem;
+  border-radius: 20px;
+  padding: 0.5rem;
+  outline: none;
+  border: none;
+  color: #fff;
+}
+.menu-main-container{
+  display: none;
+}
+
+
+
 /* media queries */
 @media only screen and (max-width:734px) {
   .top3-hide {
@@ -838,6 +902,10 @@ a {
 
   .top3-hide {
     display: visible;
+  }
+
+  .menu-main-container {
+    display: none;
   }
 }
 

@@ -29,7 +29,6 @@ const mainLeft = document.querySelector('.main-left');
 const main = document.querySelector('.main');
 
 topDownHide.addEventListener('click', () => {
-  console.log("topDownHide clicked");
 
   if (mainLeft.style.display === "block") {
     mainLeft.style.display = "none";
@@ -38,4 +37,14 @@ topDownHide.addEventListener('click', () => {
   }
   main.style.flexDirection = "column";
   mainLeft.style.width = "100%";
+});
+
+let menu = document.querySelector('.top3-hide');
+let menuMainContainer = document.querySelector('.menu-main-container')
+menu.addEventListener('click',() => {
+  if(menuMainContainer.style.display === "none"){
+    menuMainContainer.style.display = "block";
+  }else{
+    menuMainContainer.style.display = "none";
+  }
 });
