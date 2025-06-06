@@ -3,66 +3,78 @@
   justify-content: space-between;
   align-items: center;
 }
+
 .gap {
   gap: 5px;
   font-weight: 450;
 }
+
 .f {
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
+
 .border {
   border: 1px solid rgb(167, 162, 162);
   border-radius: 10px;
 }
+
 .padding {
   padding: 1.2rem;
 }
-.hide {
-  display: none;
-}
+
 .clips-padd {
   padding: 1rem 2rem;
 }
+
 .flex-dir {
   flex-direction: column;
   text-align: center;
   gap: 1rem;
 }
+
 .bor {
   border-bottom: 2px solid #f0f0f1;
 }
+
 .fg {
   display: flex;
   gap: 1.2rem;
   align-items: center;
 }
+
 .fg2 {
   display: flex;
   align-items: center;
 }
+
 .fg3 {
   display: flex;
   gap: 10px;
   align-items: center;
 }
+
 .fe {
   display: flex;
   justify-content: flex-end;
 }
+
 .text-center {
   text-align: center;
   color: #726f6f;
 }
+
 .text-center2 {
   text-align: center;
   color: #726f6f;
 }
+
 .text-center:hover {
   text-decoration: underline;
   cursor: pointer;
 }
+
 .dj {
   width: 100%;
   display: flex;
@@ -70,6 +82,7 @@
   justify-content: center;
   text-align: center;
 }
+
 .dj8 {
   width: 100%;
   display: flex;
@@ -77,6 +90,7 @@
   text-align: center;
   margin-top: 1rem;
 }
+
 .dk {
   width: 100%;
   display: flex;
@@ -87,12 +101,64 @@
   color: #4b4949;
   align-items: center;
 }
+
 .width {
   width: 100%;
 }
+
 .justify-center {
   justify-content: center;
 }
-.bg{
-  background-color: #2b63b7 ;
+
+.bg {
+  background-color: #2b63b7;
+}
+
+.fja {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sb {
+  justify-content: space-between;
+}
+
+@media only screen and (max-width:405px) {
+  .workplace-img {
+    height: 60px;
+    width: 60px;
+  }
+
+  .workplace {
+    flex-direction: column;
+  }
+
+  .virtual-img-1 {
+    width: 100%;
+  }
+
+  .virtual-img-2 {
+    width: 100%;
+  }
+
+  .clips-padd {
+    padding:0 ;
+  }
+  .clips-contain{
+    width: 100%;
+  }
+  .fg{
+    font-size: -0.5rem;
+  }
+  .card-h5{
+    font-size: 1.1rem;
+  }
+  .sche-more-padd {
+    padding: 1rem;
+  }
+  .con p{
+    margin-left: 0;
+  }
 }
