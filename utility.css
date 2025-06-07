@@ -8,7 +8,9 @@
   gap: 5px;
   font-weight: 450;
 }
-
+.hide{
+  display: none;
+}
 .f {
   display: flex;
   flex-direction: column;
