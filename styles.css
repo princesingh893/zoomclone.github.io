@@ -723,7 +723,7 @@ a {
 }
 
 .footer-btn2 {
-  width: 130px;
+  width: 160px;
   height: 40px;
   border-radius: 5px;
   outline: none;
@@ -770,6 +770,7 @@ a {
   border-radius: 20px;
   border: 1px solid #00F0EA;
   color: #0B5CFF;
+  display: flex;
 }
 
 .top-down-hide {
