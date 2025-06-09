@@ -38,13 +38,18 @@ topDownHide.addEventListener('click', () => {
   main.style.flexDirection = "column";
   mainLeft.style.width = "100%";
 });
+const menuCross = document.querySelector('.top3-cross');
+const menuButton = document.querySelector('.top3-hide');  
+const menuMainContainer = document.querySelector('.menu-main-container');
 
-let menu = document.querySelector('.top3-hide');
-let menuMainContainer = document.querySelector('.menu-main-container')
-menu.addEventListener('click',() => {
-  if(menuMainContainer.style.display === "none"){
-    menuMainContainer.style.display = "block";
-  }else{
-    menuMainContainer.style.display = "none";
-  }
-});
+function toggleMenu() {
+  const isHidden = menuMainContainer.style.display === "none";
+  
+  menuMainContainer.style.display = isHidden ? "block" : "none";
+  menuCross.style.display = isHidden ? "block" : "none";
+  menuButton.style.display = isHidden ? "none" : "block";
+}
+
+
+menuButton.addEventListener('click', toggleMenu);
+menuCross.addEventListener('click', toggleMenu);
