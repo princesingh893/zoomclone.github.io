@@ -22,15 +22,20 @@
 </head>
 
 <body>
-    <div class="h-[65.6px] p-4 pr-7 flex items-center justify-between">
+    <div class="fixed bottom-0 h-[50px] w-[50px] bg-[#6aaae4] flex justify-center items-center ml-4 mb-[0.1rem] rounded-[10px]">
+        <img src="left-side.svg" alt="">
+    </div>
+    <div class="fixed bottom-[40px] right-[30px] h-[60px] w-[60px] bg-[rgb(68,136,255)] md:flex justify-center items-center ml-4 mb-[0.1rem] rounded-full hidden">
+        <img src="smile-right.svg" alt="">
+    </div>
+    <div class="h-[65.6px] p-4 pr-7 flex items-center justify-between border-b-1 border-[#b4b4b886] fixed w-full bg-white">
         <img src="https://us05st2.zoom.us/static/6.3.36622/image/new/topNav/Zoom_logo.svg" alt="">
         <div class="flex gap-5 md:gap-7">
             <a href="/support" class="text-blue-600 hover:underline text-xs md:text-sm">
                 Support
             </a>
-
             <div class="relative group">
-                <button class="text-blue-600 hover:underline text-xs md:text-sm flex items-center">
+                <button class="text-blue-600 hover:underline text-sm flex items-center">
                     English
                     <i class="fa-solid fa-caret-down ml-2 text-sm"></i>
                 </button>
@@ -49,15 +54,58 @@
             </div>
         </div>
     </div>
-    <div class="h-screen max-h-[480px] min-w-[840px] bg-red-400 ">
-        <div class="mx-auto">
-            <div class="h-[200px] w-[400px]  bg-pink-500">
-                <div>
-
+    <div class="mb-12">
+        <div class="md:w-[80%] w-full md:mx-auto pt-[150px] pl-[30px] pr-[30px]">
+            <div class="flex justify-center ">
+                <div class="md:w-[80%]">
+                    <div class="flex flex-col gap-9 text-center mb-12">
+                        <div>
+                            <p class="text-[#232333] leading-9 text-2xl font-medium">Your Meetings has been launched in
+                                Zoom Workplace app</p>
+                        </div>
+                        <div>
+                            <p>Dont's see your meetings?</p>
+                        </div>
+                        <div>
+                            <p>By joining a meeting, you agree to our <span class="text-[#0e72ed]">Terms of
+                                    Service</span> and <span class="text-[#0e72ed]">Privacy Statement</span></p>
+                        </div>
+                    </div>
+                    <div class="m-9">
+                        <button
+                            class=" w-full rounded-xl p-3 bg-[#0e72ed] text-[#fff] cursor-pointer hover:bg-[#0e72eda0]">Join
+                            Meetings</button>
+                    </div>
+                    <div class="flex justify-center flex-col items-center gap-3">
+                        <div>
+                            <p>First-time user of Zoom?</p>
+                        </div>
+                        <div class="flex gap-8 ">
+                            <div class="flex items-center cursor-pointer">
+                                <img src="https://images.meesho.com/images/pow/playstoreSmallIcon.png" alt=""
+                                    class="mr-1 h-[20px]">
+                                <p class="text-[#0e72ed] hover:underline">Google Play</p>
+                            </div>
+                            <div class="flex items-center cursor-pointer text-[#0e72ed]">
+                                <i class="fa-solid fa-download mr-1"></i>
+                                <p class="hover:underline">Zoom</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    <footer>
+        <div class="p-8 pb-5 text-center text-[#232333]">
+            <p>
+                ©2025 Zoom Communications, Inc. All rights reserved.
+
+                Trust Center Acceptable Use Guidelines Legal & Compliance Do Not Sell My Personal Information Cookie
+                Preferences
+            </p>
+        </div>
+    </footer>
     <script src="host.js"></script>
 </body>
 

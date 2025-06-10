@@ -24,7 +24,7 @@ linkBackGround.addEventListener("click", () => {
   linkBackGround.classList.add("bg");
 });
 
-const topDownHide = document.querySelector('.top-down-hide');
+const topDownHide = document.querySelector('.before-1024');
 const mainLeft = document.querySelector('.main-left');
 const main = document.querySelector('.main');
 
