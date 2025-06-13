@@ -1,0 +1,128 @@
+
+let group = document.querySelector('.group');
+let lang = document.querySelector('.lang');
+
+group.addEventListener('click',() =>{
+    lang.classList.toggle('hidden')
+});
+
+let cardHide = document.getElementById('card-hide-dropdown');
+let upgradeHideBtn = document.getElementById('upgrade-hide-btn');
+
+upgradeHideBtn.addEventListener('click', () => {
+  cardHide.classList.toggle('hidden');
+});
+
+let decreaseBtn = document.getElementById('decrease-btn');
+let increaseBtn = document.getElementById('increase-btn');
+let valueIncrease = document.getElementById('valueForincreaseOrDecrease');
+
+let val = parseInt(valueIncrease.innerText);
+
+function cursorAllowedOrNot() {
+  if (val <= 1) {
+    decreaseBtn.style.cursor = 'not-allowed';
+  } else {
+    decreaseBtn.style.cursor = 'pointer';
+  }
+
+  if (val >= 99) {
+    increaseBtn.style.cursor = 'not-allowed';
+  } else {
+    increaseBtn.style.cursor = 'pointer';
+  }
+}
+cursorAllowedOrNot();
+increaseBtn.addEventListener('click', () => {
+  if (val < 99) {
+    val = parseInt(valueIncrease.innerText) + 1;
+    valueIncrease.innerHTML = val;
+    cursorAllowedOrNot();
+  }
+});
+decreaseBtn.addEventListener('click', () => {
+  if (val > 1) {
+    val = parseInt(valueIncrease.innerText) - 1;
+    valueIncrease.innerHTML = val;
+    cursorAllowedOrNot();
+  }
+});
+
+let annualSubscription = document.getElementById('annual-subscription');
+let monthlySubscription = document.getElementById('monthly-subscription');
+let hideMonthlyImgSubscription = document.getElementById('hide-monthly-img-subscription');
+let hideAnnualImgSubscription = document.getElementById('hide-annual-img-subscription');
+
+
+function resetBorders() {
+  annualSubscription.style.cssText = 'border:1px solid #a6a6ad';
+  monthlySubscription.style.cssText = 'border:1px solid #a6a6ad';
+}
+function hideImg() {
+  hideMonthlyImgSubscription.classList.remove('hide');
+  hideAnnualImgSubscription.classList.add('hide')
+
+}
+function hideImg2() {
+  hideMonthlyImgSubscription.classList.add('hide');
+  hideAnnualImgSubscription.classList.remove('hide')
+}
+hideImg();
+hideImg2();
+annualSubscription.addEventListener('click', () => {
+  resetBorders();
+  hideImg2();
+  annualSubscription.style.border = '2px solid blue';
+  hidediscount2();
+  hideAnnual();
+});
+monthlySubscription.addEventListener('click', () => {
+  resetBorders();
+  hideImg();
+  monthlySubscription.style.border = '2px solid blue';
+  hidediscount();
+});
+
+let paraHideDiscount = document.getElementsByClassName("hide-monthly-discount");
+let moneyChangeDiscountMonthly = document.getElementsByClassName("monthly-money");
+let moneyChangeDiscountAnnual = document.getElementsByClassName("annual-money");
+
+console.log(moneyChangeDiscountAnnual)
+function hideAnnual() {
+  Array.from(moneyChangeDiscountAnnual).forEach((element) => {
+    moneyChangeDiscountAnnual[0].textContent = '₹13,760';
+    element.textContent = '₹12,384';
+  });
+}
+
+function hidediscount() {
+  Array.from(paraHideDiscount).forEach((element) => {
+    element.classList.add('hide');
+  });
+  Array.from(moneyChangeDiscountMonthly).forEach((element) => {
+    element.textContent = '₹1,376';
+  });
+}
+function hidediscount2() {
+  Array.from(paraHideDiscount).forEach((element) => {
+    element.classList.remove('hide');
+  });
+}
+let hideThreeBoxBottom = document.getElementById('hide-three-box-footer');
+console.log(hideThreeBoxBottom)
+
+let viewMoreProduct = document.getElementById('view-more-product');
+let viewLessProduct = document.getElementById('view-less-product');
+
+viewMoreProduct.addEventListener('click', () => {
+  hideThreeBoxBottom.classList.toggle('hidden');
+
+  viewMoreProduct.style.display = 'none';
+  viewLessProduct.style.display = 'block';
+});
+viewLessProduct.addEventListener('click', () => {
+  hideThreeBoxBottom.classList.toggle('hidden');
+
+  viewMoreProduct.style.display = 'block';
+  viewLessProduct.style.display = 'none';
+});
