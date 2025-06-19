@@ -40,7 +40,9 @@
     </div>
     <div
         class="h-[65.6px] p-4 pr-7 flex items-center justify-between border-b-1 border-[#b4b4b886] fixed w-full bg-white">
-        <img src="https://us05st2.zoom.us/static/6.3.36622/image/new/topNav/Zoom_logo.svg" alt="">
+        <a href="index.html">
+            <img src="https://us05st2.zoom.us/static/6.3.36622/image/new/topNav/Zoom_logo.svg" alt="/images">
+        </a>
         <div class="flex gap-5 md:gap-7">
             <a href="/support" class="text-blue-600 hover:underline text-sm">
                 Support
